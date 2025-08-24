@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+ --cor-fundo: #073642;
+ --cor-pergunta: #282c34;
+ --cor-botoes: #4b4f59;
+ --cor-texto: #ffffff;
+ --cor-amarelo: #ffc107;
+ --cor-vermelho: #dc3545;
+ --cor-verde: #28a745;
+}
+
+body, html {
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
+ color: var(--cor-texto);
+ background-color: var(--cor-fundo);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+.container {
+ width: 100%;
+ max-width: 1920px;
+ height: 100vh;
+ background-image: url('https://i.imgur.com/T0b6e9Z.png');
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.tela-jogo {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.escondido {
+ display: none !important;
+}
+
+/* Estilos da Tela Inicial */
+#tela-inicial {
+ justify-content: space-around;
+ padding-bottom: 20%;
+}
+
+.logo-inicial {
+ max-width: 400px;
+}
+
+.card-play {
+ background-color: #92011b;
+ border: none; /* Adicionado para remover a borda padrão do botão */
+ border-radius: 10px;
+ padding: 20px;
+ text-align: center;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ cursor: pointer;
+ transition: transform 0.2s;
+ display: flex; /* Adicionado para alinhar o conteúdo */
+ flex-direction: column; /* Adicionado para empilhar a imagem e o texto */
+ align-items: center; /* Adicionado para centralizar horizontalmente */
+}
+
+.card-play:hover {
+ transform: scale(1.05);
+}
+
+.card-play img {
+ width: 100px;
+}
+
+.card-play p {
+ margin-top: 10px;
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: white; /* Garante que a cor do texto seja branca */
+}
+
+/* Estilos da Tela do Jogo */
+#tela-jogo {
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 20px;
+}
+
+.placar-container {
+ background-color: rgba(0, 0, 0, 0.4);
+ padding: 10px;
+ border-radius: 10px;
+ width: 15%;
+max-height: 90%;
+ overflow-y: auto;
+}
+
+#lista-valores {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.item-valor {
+ padding: 5px 10px;
+ margin: 5px 0;
+background-color: #282c34;
+ border-radius: 5px;
+ text-align: right;
+ font-size: 0.9rem;
+}
+
+.item-atual {
+ background-color: var(--cor-amarelo);
+ color: var(--cor-fundo);
+ font-weight: bold;
+}
+
+.area-principal-jogo {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 55%;
+ position: relative;
+}
+
+.logo-jogo {
+position: absolute;
+top: 20px;
+left: 50%;
+ transform: translateX(-50%);
+ width: 150px;
+}
+
+.temporizador {
+ position: absolute;
+ top: 20px;
+right: 20px;
+ font-size: 2rem;
+ font-weight: bold;
+color: var(--cor-amarelo);
+}
+
+.caixa-pergunta {
+background-color: rgba(0, 0, 0, 0.6);
+ padding: 30px;
+ border-radius: 10px;
+ width: 80%;
+ text-align: center;
+ margin-top: 100px;
+ min-height: 120px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#pergunta-texto {
+ font-size: 1.5rem;
+ margin: 0;
+}
+
+.caixa-opcoes {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ width: 80%;
+ margin-top: 30px;
+}
+
+.opcao {
+ background-color: var(--cor-botoes);
+ border: none;
+ color: var(--cor-texto);
+ padding: 20px;
+ font-size: 1.2rem;
+text-align: left;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.2s;
+}
+
+.opcao:hover {
+ background-color: #6c717a;
+}
+
+.opcao.correta {
+ background-color: var(--cor-verde);
+}
+
+.opcao.incorreta {
+ background-color: var(--cor-vermelho);
+}
+
+.painel-pulos {
+ display: flex;
+ gap: 10px;
+ margin-top: 20px;
+}
+
+.pulo {
+ background-color: #282c34;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ font-size: 0.9rem;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+}
+
+.pulo:hover {
+ opacity: 1;
+}
+
+.apresentador-ajudas-container {
+ width: 25%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+}
+
+.apresentador-img {
+ width: 100%;
+max-width: 300px;
+}
+
+.painel-ajudas-extra {
+ display: flex;
+gap: 10px;
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+.ajuda-btn {
+ width: 60px;
+ height: 60px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ cursor: pointer;
+}
+
+#ajuda-cartas { background-image: url('https://i.imgur.com/k2Xz2wL.png'); }
+#ajuda-plateia { background-image: url('https://i.imgur.com/w2Yv2gA.png'); }
+#ajuda-placa { background-image: url('https://i.imgur.com/e2oY2pA.png'); }
+
+.botoes-acao-final {
+display: flex;
+ justify-content: center;
+ gap: 10px;
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+.acao-btn {
+ text-align: center;
+ padding: 10px 20px;
+ border-radius: 5px;
+}
+
+.acao-errar { background-color: var(--cor-vermelho); }
+.acao-parar { background-color: var(--cor-amarelo); color: var(--cor-fundo); }
+.acao-acertar { background-color: var(--cor-verde); }
+
+.rotulo {
+ font-size: 0.8rem;
+font-weight: bold;
+ margin: 0;
+}
+
+.valor-final {
+    font-size: 1.2rem;
+    margin: 0;
+}

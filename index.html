@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão PROCERGS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div id="tela-inicial" class="tela-jogo">
+            <img src="imagens/Show_do_milhao.png" alt="Logo Show do Milhão" class="logo-inicial">
+            <button id="botao-jogar" class="card-play">
+                <img src="imagens/1 real.png" alt="Ícone de Play">
+                <p>Jogar</p>
+            </button>
+        </div>
+
+        <div id="tela-jogo" class="tela-jogo escondido">
+            <div class="placar-container">
+                <ul id="lista-valores">
+                    <li data-valor="1000000" class="item-valor">R$ 1.000.000</li>
+                    <li data-valor="500000" class="item-valor">R$ 500.000</li>
+                    <li data-valor="400000" class="item-valor">R$ 400.000</li>
+                    <li data-valor="300000" class="item-valor">R$ 300.000</li>
+                    <li data-valor="200000" class="item-valor">R$ 200.000</li>
+                    <li data-valor="100000" class="item-valor">R$ 100.000</li>
+                    <li data-valor="50000" class="item-valor">R$ 50.000</li>
+                    <li data-valor="30000" class="item-valor">R$ 30.000</li>
+                    <li data-valor="20000" class="item-valor">R$ 20.000</li>
+                    <li data-valor="10000" class="item-valor">R$ 10.000</li>
+                    <li data-valor="5000" class="item-valor">R$ 5.000</li>
+                    <li data-valor="4000" class="item-valor">R$ 4.000</li>
+                    <li data-valor="3000" class="item-valor">R$ 3.000</li>
+                    <li data-valor="2000" class="item-valor">R$ 2.000</li>
+                    <li data-valor="1000" class="item-valor item-atual">R$ 1.000</li>
+                </ul>
+            </div>
+
+            <div class="area-principal-jogo">
+                <img src="imagens/Show_do_milhao.png" alt="Logo Show do Milhão" class="logo-jogo">
+                <div class="temporizador">00:00</div>
+                <div class="caixa-pergunta">
+                    <p id="pergunta-texto">?</p>
+                </div>
+                <div class="caixa-opcoes">
+                    <button class="opcao" data-index="0"></button>
+                    <button class="opcao" data-index="1"></button>
+                    <button class="opcao" data-index="2"></button>
+                    <button class="opcao" data-index="3"></button>
+                </div>
+
+                <div class="painel-pulos">
+                    <div class="pulo" id="pulo1">Pulo 1</div>
+                    <div class="pulo" id="pulo2">Pulo 2</div>
+                    <div class="pulo" id="pulo3">Pulo 3</div>
+                </div>
+            </div>
+
+            <div class="apresentador-ajudas-container">
+                <img src="imagens/sigma-male-breaking-bad.gif" alt="Apresentador" class="apresentador-img">
+                <div class="painel-ajudas-extra">
+                    <div class="ajuda-btn" id="ajuda-cartas"></div>
+                    <div class="ajuda-btn" id="ajuda-plateia"></div>
+                    <div class="ajuda-btn" id="ajuda-placa"></div>
+                </div>
+            </div>
+
+            <div class="botoes-acao-final">
+                <div class="acao-btn acao-errar">
+                    <p class="rotulo">ERRAR</p>
+                    <p class="valor-final" id="valor-errar">R$ 0</p>
+                </div>
+                <div class="acao-btn acao-parar">
+                    <p class="rotulo">PARAR</p>
+                    <p class="valor-final" id="valor-parar">R$ 500</p>
+                </div>
+                <div class="acao-btn acao-acertar">
+                    <p class="rotulo">ACERTAR</p>
+                    <p class="valor-final" id="valor-acertar">R$ 1 MIL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
