@@ -116,9 +116,9 @@ const perguntas = [
         pergunta: "Qual anotação é usada para expor um método de Controller como um endpoint HTTP GET em uma Web API?",
         opcoes: [
             "`[HttpPost]`",
-            "`[HttpPut]`",
-            "`[HttpGet]`",
-            "`[HttpDelete]`"
+            " `[HttpPut]`",
+            " `[HttpGet]`",
+            " `[HttpDelete]`"
         ],
         respostaCorreta: 2,
         nivel: 3
@@ -127,10 +127,10 @@ const perguntas = [
     {
         pergunta: "Em HTML, qual tag é usada para criar um hiperlink?",
         opcoes: [
-            "`<link>`",
-            "`<a>`",
-            "`<href>`",
-            "`<nav>`"
+            " `<link>`",
+            " `<a>`",
+            " `<href>`",
+            " `<nav>`"
         ],
         respostaCorreta: 1,
         nivel: 1
@@ -138,10 +138,10 @@ const perguntas = [
     {
         pergunta: "Em CSS, qual propriedade é usada para alterar a cor do texto de um elemento?",
         opcoes: [
-            "`background-color`",
-            "`text-color`",
-            "`font-color`",
-            "`color`"
+            " `background-color`",
+            " `text-color`",
+            " `font-color`",
+            " `color`"
         ],
         respostaCorreta: 3,
         nivel: 1
@@ -172,10 +172,10 @@ const perguntas = [
     {
         pergunta: "Em SQL, qual cláusula é usada para filtrar linhas de uma tabela com base em uma condição?",
         opcoes: [
-            "`JOIN`",
-            "`GROUP BY`",
-            "`ORDER BY`",
-            "`WHERE`"
+            " `JOIN`",
+            " `GROUP BY`",
+            " `ORDER BY`",
+            " `WHERE`"
         ],
         respostaCorreta: 3,
         nivel: 2
@@ -217,10 +217,10 @@ const perguntas = [
     {
         pergunta: "Qual comando GIT é usado para enviar as alterações do seu repositório local para um repositório remoto?",
         opcoes: [
-            "`git commit`",
-            "`git pull`",
-            "`git push`",
-            "`git status`"
+            " `git commit`",
+            " `git pull`",
+            " `git push`",
+            " `git status`"
         ],
         respostaCorreta: 2,
         nivel: 2
@@ -262,10 +262,10 @@ const perguntas = [
     {
         pergunta: "Qual comando é usado para construir uma imagem Docker a partir de um Dockerfile?",
         opcoes: [
-            "`docker run`",
-            "`docker build`",
-            "`docker pull`",
-            "`docker stop`"
+            " `docker run`",
+            " `docker build`",
+            " `docker pull`",
+            " `docker stop`"
         ],
         respostaCorreta: 1,
         nivel: 2
@@ -336,6 +336,9 @@ const valores = [
 let perguntaAtualIndex = 0;
 let pontuacaoAtual = 0;
 let pularDisponivel = 3;
+let ajudaCartasDisponivel = true;
+let ajudaPlateiaDisponivel = true;
+let ajudaPlacaDisponivel = true;
 
 const telaInicial = document.getElementById('tela-inicial');
 const telaJogo = document.getElementById('tela-jogo');
@@ -345,6 +348,9 @@ const botoesOpcao = document.querySelectorAll('.opcao');
 const listaValores = document.getElementById('lista-valores');
 const valorParar = document.getElementById('valor-parar');
 const valorAcertar = document.getElementById('valor-acertar');
+const ajudaCartasBtn = document.getElementById('ajuda-cartas');
+const ajudaPlateiaBtn = document.getElementById('ajuda-plateia');
+const ajudaPlacaBtn = document.getElementById('ajuda-placa');
 
 // Função para embaralhar o array (algoritmo de Fisher-Yates)
 function embaralharArray(array) {
@@ -362,7 +368,25 @@ function iniciarJogo() {
     // Embaralha as perguntas antes de começar o jogo
     embaralharArray(perguntas);
 
+    // Reseta a disponibilidade das ajudas ao iniciar um novo jogo
+    ajudaCartasDisponivel = true;
+    ajudaPlateiaDisponivel = true;
+    ajudaPlacaDisponivel = true;
+    
+    // Mostra as ajudas novamente
+    ajudaCartasBtn.style.opacity = '1';
+    ajudaPlateiaBtn.style.opacity = '1';
+    ajudaPlacaBtn.style.opacity = '1';
+    ajudaCartasBtn.style.cursor = 'pointer';
+    ajudaPlateiaBtn.style.cursor = 'pointer';
+    ajudaPlacaBtn.style.cursor = 'pointer';
+
     carregarPergunta();
+    
+    // Adicionando os event listeners para as ajudas aqui para garantir que funcionem
+    ajudaCartasBtn.addEventListener('click', ajudaCartas);
+    ajudaPlateiaBtn.addEventListener('click', ajudaPlateia);
+    ajudaPlacaBtn.addEventListener('click', ajudaPlaca);
 
     const botoesPulo = document.querySelectorAll('.pulo');
     botoesPulo.forEach(botao => {
@@ -377,7 +401,6 @@ function carregarPergunta() {
         return;
     }
     
-    // Ajustado para garantir que não tentará carregar perguntas além do que existe no array
     if (perguntaAtualIndex >= perguntas.length) {
         alert("Parabéns! Você respondeu todas as perguntas disponíveis e conquistou o prêmio de R$ " + valores[perguntaAtualIndex - 1].toLocaleString('pt-BR'));
         reiniciarJogo();
@@ -433,15 +456,15 @@ function atualizarValoresBotoes() {
     if (perguntaAtualIndex > 0) {
         const valorAnterior = valores[perguntaAtualIndex - 1];
         valorParar.textContent = `R$ ${valorAnterior.toLocaleString('pt-BR')}`;
+    } else {
+        valorParar.textContent = `R$ 0`;
     }
 
-    if (perguntaAtualIndex === valores.length - 1) {
-        valorAcertar.textContent = `R$ 1 MILHÃO`;
-    } else if (perguntaAtualIndex < perguntas.length) {
+    if (perguntaAtualIndex < valores.length) {
         const valorProximo = valores[perguntaAtualIndex];
         valorAcertar.textContent = `R$ ${valorProximo.toLocaleString('pt-BR')}`;
     } else {
-        valorAcertar.textContent = `Prêmio Final`;
+        valorAcertar.textContent = `R$ 1.000.000`;
     }
 }
 
@@ -467,6 +490,63 @@ function pularPergunta(e) {
         carregarPergunta();
     } else {
         alert("Você não tem mais pulos disponíveis!");
+    }
+}
+
+function ajudaCartas() {
+    if (ajudaCartasDisponivel) {
+        ajudaCartasDisponivel = false;
+        const questao = perguntas[perguntaAtualIndex];
+        const opcoesIncorretas = [];
+
+        botoesOpcao.forEach((botao, index) => {
+            if (index !== questao.respostaCorreta) {
+                opcoesIncorretas.push(botao);
+            }
+        });
+
+        const indexParaRemover1 = Math.floor(Math.random() * opcoesIncorretas.length);
+        opcoesIncorretas[indexParaRemover1].classList.add('escondido');
+        opcoesIncorretas.splice(indexParaRemover1, 1);
+
+        const indexParaRemover2 = Math.floor(Math.random() * opcoesIncorretas.length);
+        opcoesIncorretas[indexParaRemover2].classList.add('escondido');
+
+        ajudaCartasBtn.style.cursor = 'not-allowed';
+        ajudaCartasBtn.style.opacity = '0.4';
+        ajudaCartasBtn.removeEventListener('click', ajudaCartas);
+    } else {
+        alert("Ajuda 'Cartas' já foi utilizada.");
+    }
+}
+
+function ajudaPlateia() {
+    if (ajudaPlateiaDisponivel) {
+        ajudaPlateiaDisponivel = false;
+        const questao = perguntas[perguntaAtualIndex];
+        const respostaCorretaOpcao = botoesOpcao[questao.respostaCorreta].textContent;
+        alert(`A plateia votou na opção correta: ${respostaCorretaOpcao}`);
+        
+        ajudaPlateiaBtn.style.cursor = 'not-allowed';
+        ajudaPlateiaBtn.style.opacity = '0.4';
+        ajudaPlateiaBtn.removeEventListener('click', ajudaPlateia);
+    } else {
+        alert("Ajuda 'Platéia' já foi utilizada.");
+    }
+}
+
+function ajudaPlaca() {
+    if (ajudaPlacaDisponivel) {
+        ajudaPlacaDisponivel = false;
+        const questao = perguntas[perguntaAtualIndex];
+        const respostaCorretaOpcao = botoesOpcao[questao.respostaCorreta].textContent;
+        alert(`O apresentador está consultando a placa... A resposta é: ${respostaCorretaOpcao}`);
+        
+        ajudaPlacaBtn.style.cursor = 'not-allowed';
+        ajudaPlacaBtn.style.opacity = '0.4';
+        ajudaPlacaBtn.removeEventListener('click', ajudaPlaca);
+    } else {
+        alert("Ajuda 'Placa' já foi utilizada.");
     }
 }
 
