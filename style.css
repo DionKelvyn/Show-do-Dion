@@ -230,7 +230,7 @@ text-align: left;
 
 .apresentador-img {
  width: 100%;
-max-width: 300px;
+max-width: 500px;
 }
 
 .painel-ajudas-extra {
@@ -250,9 +250,9 @@ gap: 10px;
  cursor: pointer;
 }
 
-#ajuda-cartas { background-image: url('https://i.imgur.com/k2Xz2wL.png'); }
-#ajuda-plateia { background-image: url('https://i.imgur.com/w2Yv2gA.png'); }
-#ajuda-placa { background-image: url('https://i.imgur.com/e2oY2pA.png'); }
+#ajuda-cartas { background-image: url('imagens/ajuda\ cartas.png'); }
+#ajuda-plateia { background-image: url('imagens/ajuda\ plateia.png'); }
+#ajuda-placa { background-image: url('imagens/ajuda\ placas.png'); }
 
 .botoes-acao-final {
     display: flex;
