@@ -255,19 +255,19 @@ gap: 10px;
 #ajuda-placa { background-image: url('https://i.imgur.com/e2oY2pA.png'); }
 
 .botoes-acao-final {
-display: flex;
- justify-content: center;
+    display: flex;
+    justify-content: center;
  gap: 10px;
  position: absolute;
- bottom: 20px;
+ bottom: 200px;
  left: 50%;
- transform: translateX(-50%);
+ transform: translateX(130%);
 }
 
 .acao-btn {
  text-align: center;
- padding: 10px 20px;
- border-radius: 5px;
+ padding: 1px 20px;
+ border-radius: 500px;
 }
 
 .acao-errar { background-color: var(--cor-vermelho); }
