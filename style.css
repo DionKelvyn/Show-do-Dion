@@ -27,7 +27,7 @@ body, html {
  width: 100%;
  max-width: 1920px;
  height: 100vh;
- background-image: url('https://i.imgur.com/T0b6e9Z.png');
+ background: rgb(9, 9, 125);
  background-size: cover;
  background-position: center;
  display: flex;
@@ -84,10 +84,9 @@ body, html {
  margin-top: 10px;
  font-size: 1.5rem;
  font-weight: bold;
- color: white; /* Garante que a cor do texto seja branca */
+ color: white; 
 }
 
-/* Estilos da Tela do Jogo */
 #tela-jogo {
  flex-direction: row;
  justify-content: space-between;
