@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show do Milhão PROCERGS</title>
+    <title>Show do Dion</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,10 +11,13 @@
 
     <div class="container">
         <div id="tela-inicial" class="tela-jogo">
-            <img src="imagens/Show_do_milhao.png" alt="Logo Show do Milhão" class="logo-inicial">
+            <div class="logo-container">
+                <img src="imagens/Show_do_Dion.png" alt="Logo Show do Dion" class="logo-inicial">
+            </div>
+            
             <button id="botao-jogar" class="card-play">
                 <img src="imagens/1 real.png" alt="Ícone de Play">
-                <p>Jogar</p>
+                <p>JOGAR</p>
             </button>
         </div>
 
@@ -40,8 +43,8 @@
             </div>
 
             <div class="area-principal-jogo">
-                <img src="imagens/Show_do_milhao.png" alt="Logo Show do Milhão" class="logo-jogo">
-                <div class="temporizador">00:00</div>
+                <img src="imagens/Show_do_Dion.png" alt="Logo Show do Dion" class="logo-jogo">
+                <!-- <div class="temporizador">00:00</div> --> <!-- Temporizador desativado por enquanto -->
                 <div class="caixa-pergunta">
                     <p id="pergunta-texto">?</p>
                 </div>
@@ -66,20 +69,19 @@
                     <div class="ajuda-btn" id="ajuda-plateia"></div>
                     <div class="ajuda-btn" id="ajuda-placa"></div>
                 </div>
-            </div>
-
-            <div class="botoes-acao-final">
-                <div class="acao-btn acao-errar">
-                    <p class="rotulo">ERRAR</p>
-                    <p class="valor-final" id="valor-errar">R$ 0</p>
-                </div>
-                <div class="acao-btn acao-parar">
-                    <p class="rotulo">PARAR</p>
-                    <p class="valor-final" id="valor-parar">R$ 500</p>
-                </div>
-                <div class="acao-btn acao-acertar">
-                    <p class="rotulo">ACERTAR</p>
-                    <p class="valor-final" id="valor-acertar">R$ 1 MIL</p>
+                <div class="botoes-acao-final">
+                    <button class="acao-btn acao-errar">
+                        <p class="rotulo">ERRAR</p>
+                        <p class="valor-final">0</p>
+                    </button>
+                    <button class="acao-btn acao-parar">
+                        <p class="rotulo">PARAR</p>
+                        <p id="valor-parar" class="valor-final">R$ 0</p>
+                    </button>
+                    <button class="acao-btn acao-acertar">
+                        <p class="rotulo">ACERTAR</p>
+                        <p id="valor-acertar" class="valor-final">R$ 1.000</p>
+                    </button>
                 </div>
             </div>
         </div>

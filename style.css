@@ -1,90 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-:root {
+:root { /* Define variáveis CSS para facilitar a manutenção de cores */
  --cor-fundo: #073642;
  --cor-pergunta: #282c34;
  --cor-botoes: #4b4f59;
  --cor-texto: #ffffff;
  --cor-amarelo: #ffc107;
- --cor-vermelho: #dc3545;
+ --cor-vermelho: #dc3545; 
  --cor-verde: #28a745;
+ --cor-borda-logo: #3498db; /* Azul elétrico para o logo */
+ --cor-borda-botao: #c0392b; /* Vermelho escuro para o botão */
 }
 
-body, html {
+body, html { /* Estilos globais para a página */
  margin: 0;
  padding: 0;
  font-family: 'Roboto', sans-serif;
  color: var(--cor-texto);
  background-color: var(--cor-fundo);
- display: flex;
+ min-height: 100vh;
+ width: 100vw; /* Garante que o body ocupe toda a largura */
+ display: flex; /* Usa Flexbox para centralizar o contêiner do jogo */
  justify-content: center;
  align-items: center;
  min-height: 100vh;
- overflow: hidden;
+ overflow: hidden; /* Evita barras de rolagem */
 }
 
-.container {
+.container { /* Contêiner principal com fundo e alinhamento */
  width: 100%;
  max-width: 1920px;
  height: 100vh;
- background: rgb(9, 9, 125);
  background-size: cover;
  background-position: center;
  display: flex;
  justify-content: center;
  align-items: center;
+ position: relative; /* Para posicionar elementos com 'absolute' */
 }
 
-.tela-jogo {
+/* Focos de luz no topo (simulados por gradientes ou imagens) */
+.container::before, .container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 250px; /* Largura do foco de luz */
+    height: 300px; /* Altura do foco de luz */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%); /* Gradiente para simular luz */
+    opacity: 0.6;
+    z-index: 0; /* Abaixo dos elementos da interface */
+}
+
+.container::before {
+    left: 15%; /* Posição do foco de luz esquerdo */
+    transform: skewX(-20deg); /* Inclinação para simular ângulo de luz */
+}
+
+.container::after {
+    right: 15%; /* Posição do foco de luz direito */
+    transform: skewX(20deg); /* Inclinação para simular ângulo de luz */
+}
+
+.tela-jogo { /* Estilos para as telas do jogo (inicial e principal) */
  width: 100%;
  height: 100%;
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: column;
+ z-index: 1; /* Garante que o conteúdo fique acima do fundo */
 }
 
-.escondido {
+.escondido { /* Classe para esconder elementos */
  display: none !important;
 }
 
 /* Estilos da Tela Inicial */
 #tela-inicial {
- justify-content: space-around;
- padding-bottom: 20%;
+ justify-content: center; /* Centraliza verticalmente */
+ gap: 80px; /* Espaçamento entre o logo e o botão */
+}
+
+.logo-container {
+    background-image: url('imagens/borda.png'); 
+    background-size: 100% 100%; /* Ajusta a imagem para preencher o container */
+    background-repeat: no-repeat;
+    padding: 50px 50px; /* Preenchimento para a borda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 40px rgba(0, 191, 255, 0.5); /* Brilho azul */
+    border-radius: 15px; /* Bordas arredondadas para o container */
 }
 
 .logo-inicial {
  max-width: 400px;
+ height: auto;
 }
 
-.card-play {
- background-color: #92011b;
- border: none; /* Adicionado para remover a borda padrão do botão */
- border-radius: 10px;
- padding: 20px;
+.card-play { /* Botão de play na tela inicial */
+ background-image: url('imagens/borda_botao.png');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ border: none;
+ padding: 25px 60px; /* Preenchimento para a borda */
  text-align: center;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.4); /* Brilho vermelho */
  cursor: pointer;
- transition: transform 0.2s;
- display: flex; /* Adicionado para alinhar o conteúdo */
- flex-direction: column; /* Adicionado para empilhar a imagem e o texto */
- align-items: center; /* Adicionado para centralizar horizontalmente */
+ transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+ display: flex;
+ flex-direction: row; /* Alinha ícone e texto lado a lado */
+ align-items: center;
+ gap: 20px; /* Espaçamento entre a imagem e o texto */
+ border-radius: 15px; /* Bordas arredondadas para o botão */
 }
 
 .card-play:hover {
  transform: scale(1.05);
+ box-shadow: 0 0 30px rgba(255, 50, 50, 1), 0 0 60px rgba(255, 50, 50, 0.7); /* Brilho mais intenso no hover */
 }
 
 .card-play img {
- width: 100px;
+ width: 60px; /* Tamanho da nota de 1 real */
+ height: auto;
 }
 
 .card-play p {
- margin-top: 10px;
- font-size: 1.5rem;
- font-weight: bold;
- color: white; 
+    margin: 0; /* Remove margem padrão do parágrafo */
+    font-size: 2.2rem; /* Tamanho da fonte maior para "JOGAR" */
+    font-weight: bold;
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
 }
 
 #tela-jogo {
@@ -230,28 +276,40 @@ text-align: left;
 .apresentador-img {
  width: 100%;
 max-width: 500px;
+height: auto;
+border-radius: 10px; /* bordas arredondadas para a imagem */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
 }
 
 .painel-ajudas-extra {
- display: flex;
-gap: 10px;
- position: absolute;
- bottom: 0;
- left: 50%;
- transform: translateX(-50%);
+ display: flex; /* Mantém as ajudas lado a lado */
+gap: 15px; /* Espaçamento entre os botões de ajuda */
+margin-top: 10px; /* Um pequeno ajuste de margem acima das ajudas se necessário */
+flex-wrap: wrap; /* Permite que os botões quebrem a linha se a tela for pequena */
+justify-content: center; /* Centraliza os botões de ajuda */
 }
 
 .ajuda-btn {
- width: 60px;
- height: 60px;
+ width: 80px;
+ height: 80px;
  background-size: contain;
  background-repeat: no-repeat;
+ background-position: center;
  cursor: pointer;
+ border: 2px solid var(--cor-amarelo); /* Borda para destacar */
+ border-radius: 10px; /* Bordas arredondadas */
+ box-shadow: 0 0 10px rgba(255, 193, 7, 0.7); /* Brilho */
+ transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-#ajuda-cartas { background-image: url('imagens/ajuda\ cartas.png'); }
+.ajuda-btn:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 0 20px rgba(255, 193, 7, 1); /* Brilho mais intenso */
+}
+
+#ajuda-cartas { background-image: url('imagens/cartas.webp'); }
 #ajuda-plateia { background-image: url('imagens/ajuda\ plateia.png'); }
-#ajuda-placa { background-image: url('imagens/ajuda\ placas.png'); }
+#ajuda-placa { background-image: url('imagens/jurados.jpeg'); }
 
 .botoes-acao-final {
     display: flex;
