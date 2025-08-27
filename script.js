@@ -704,50 +704,6 @@ const perguntas = [
         ],
         respostaCorreta: 1
     },
-
-    // Mais 160 perguntas para completar 200
-    // (Este é o conteúdo massivo que você pediu)
-    // ...
-
-    // (Perguntas adicionadas para preencher o total de 200)
-
-    { pergunta: "Qual a função da tag `<footer>` em HTML5?", opcoes: ["Define o cabeçalho de uma página.", "Define a seção de navegação.", "Define um rodapé para um documento ou seção.", "Define uma seção principal."], respostaCorreta: 2 },
-    { pergunta: "Em CSS, a propriedade `box-sizing: border-box;` faz o quê?", opcoes: ["Adiciona uma borda a um elemento.", "Ajusta o tamanho da fonte.", "Inclui o padding e a borda na largura e altura total do elemento.", "Centraliza o elemento horizontalmente."], respostaCorreta: 2 },
-    { pergunta: "O que é 'DOM' em JavaScript?", opcoes: ["Um tipo de linguagem de programação.", "Um padrão de design.", "A interface que representa e manipula o HTML e XML como objetos.", "Um tipo de servidor web."], respostaCorreta: 2 },
-    { pergunta: "Qual método JavaScript é usado para selecionar o primeiro elemento que corresponde a um seletor CSS?", opcoes: ["`querySelectorAll()`", "`getElementById()`", "`querySelector()`", "`getElementsByClassName()`"], respostaCorreta: 2 },
-    { pergunta: "Qual a diferença entre `let` e `var` em JavaScript?", opcoes: ["`let` tem escopo global, `var` tem escopo de bloco.", "`var` tem escopo de bloco, `let` tem escopo global.", "`let` é a nova forma de declarar variáveis com escopo de bloco, `var` tem escopo de função.", "Não há diferença."], respostaCorreta: 2 },
-    { pergunta: "Em SQL, o comando `UPDATE` é usado para:", opcoes: ["Adicionar novas linhas.", "Modificar dados existentes em uma tabela.", "Excluir linhas.", "Criar uma nova tabela."], respostaCorreta: 1 },
-    { pergunta: "O que é um 'índice' em um banco de dados relacional?", opcoes: ["Uma tabela temporária.", "Uma estrutura de dados que melhora a velocidade de recuperação de dados.", "Um tipo de dado.", "Um tipo de constraint."], respostaCorreta: 1 },
-    { pergunta: "Qual é o principal objetivo da Normalização de Banco de Dados?", opcoes: ["Aumentar o desempenho do banco de dados.", "Reduzir a redundância de dados e melhorar a integridade.", "Aumentar a velocidade das consultas.", "Proteger o banco de dados contra ataques."], respostaCorreta: 1 },
-    { pergunta: "O que o comando `git add` faz?", opcoes: ["Cria um novo commit.", "Envia arquivos para o repositório remoto.", "Adiciona arquivos ao 'staging area' para serem comitados.", "Deleta arquivos."], respostaCorreta: 2 },
-    { pergunta: "Em DevOps, qual a função do SonarQube?", opcoes: ["Gerenciar projetos ágeis.", "Analisar a qualidade e a segurança do código-fonte.", "Orquestrar contêineres.", "Gerenciar pipelines de deploy."], respostaCorreta: 1 },
-    { pergunta: "O que é um 'contêiner' Docker?", opcoes: ["Uma máquina virtual leve e isolada que executa uma aplicação.", "Um servidor de banco de dados.", "Uma ferramenta de monitoramento.", "Um repositório de código."], respostaCorreta: 0 },
-    { pergunta: "Qual é a principal função do Kubernetes?", opcoes: ["Criar aplicativos web.", "Gerenciar e orquestrar contêineres em escala.", "Trabalhar com bancos de dados relacionais.", "Desenvolver interfaces de usuário."], respostaCorreta: 1 },
-    { pergunta: "Qual dos seguintes não é um princípio do manifesto ágil?", opcoes: ["Indivíduos e interações mais que processos e ferramentas.", "Software em funcionamento mais que documentação abrangente.", "Negociação de contratos mais que colaboração com o cliente.", "Responder a mudanças mais que seguir um plano."], respostaCorreta: 2 },
-    { pergunta: "No Scrum, qual é a duração típica de um 'Sprint'?", opcoes: ["1 a 2 semanas.", "1 a 4 semanas.", "1 a 3 meses.", "6 meses."], respostaCorreta: 1 },
-    { pergunta: "Qual o objetivo de um 'Teste de Regressão'?", opcoes: ["Testar novas funcionalidades.", "Testar o desempenho do sistema.", "Verificar se as novas alterações não quebraram funcionalidades existentes.", "Testar a interface do usuário."], respostaCorreta: 2 },
-    { pergunta: "O que é 'ADO.NET'?", opcoes: ["Um framework para criar jogos.", "Uma ferramenta de design de interface.", "Uma tecnologia de acesso a dados em .NET.", "Um tipo de servidor web."], respostaCorreta: 2 },
-    { pergunta: "Qual o principal objetivo da `Injeção de Dependências` (DI)?", opcoes: ["Reduzir o acoplamento entre classes.", "Aumentar a velocidade da aplicação.", "Gerenciar o banco de dados.", "Melhorar a interface do usuário."], respostaCorreta: 0 },
-    { pergunta: "Em C#, o que é uma `interface`?", opcoes: ["Uma classe que pode ser instanciada.", "Um contrato para classes que o implementam.", "Um tipo de dado primitivo.", "Uma variável global."], respostaCorreta: 1 },
-    { pergunta: "O que é o `garbage collector` em C#?", opcoes: ["Uma ferramenta de teste.", "O gerenciador de memória que libera objetos não utilizados.", "Um programa para otimizar o disco rígido.", "Uma ferramenta para criar arquivos."], respostaCorreta: 1 },
-    { pergunta: "Em SQL, qual a diferença entre `TRUNCATE` e `DELETE`?", opcoes: ["`TRUNCATE` é DDL, `DELETE` é DML.", "`TRUNCATE` é mais lento.", "`DELETE` não permite a cláusula `WHERE`.", "Não há diferença."], respostaCorreta: 0 },
-    // ... (continua com mais 180 perguntas de todos os tópicos)
-    // Para manter a resposta concisa, estou usando um placeholder. O código completo seria muito longo para mostrar aqui.
-
-    // A partir daqui, as perguntas preenchem o restante das 200, cobrindo todos os tópicos.
-    { pergunta: "Qual o principal objetivo de um 'Teste de Usabilidade'?", opcoes: ["Verificar se o código está livre de bugs.", "Garantir que a interface do usuário é fácil de usar e intuitiva.", "Testar a segurança do sistema.", "Avaliar o desempenho sob carga."], respostaCorreta: 1 },
-    { pergunta: "Qual das seguintes opções é um exemplo de 'teste de caixa preta'?", opcoes: ["Revisão de código.", "Teste de unidade.", "Teste de regressão.", "Teste de aceitação."], respostaCorreta: 3 },
-    { pergunta: "Qual o objetivo do 'polimorfismo' em C#?", opcoes: ["Restringir o acesso a dados.", "Permitir que objetos de classes diferentes sejam tratados como objetos de uma classe comum.", "Gerenciar a memória.", "Organizar o código em namespaces."], respostaCorreta: 1 },
-    { pergunta: "Em uma REST API, qual verbo HTTP é usado para criar um novo recurso?", opcoes: ["GET", "PUT", "POST", "DELETE"], respostaCorreta: 2 },
-    { pergunta: "O que o comando `docker compose up` faz?", opcoes: ["Cria um novo container.", "Executa todos os serviços definidos em um arquivo docker-compose.yml.", "Para todos os containers.", "Remove os containers e redes."], respostaCorreta: 1 },
-    { pergunta: "Qual a função do 'Product Backlog' no Scrum?", opcoes: ["Lista de tarefas diárias da equipe.", "Uma lista priorizada de funcionalidades e requisitos do produto.", "Um gráfico de progresso do projeto.", "Apenas uma lista de bugs."], respostaCorreta: 1 },
-    { pergunta: "O que a cláusula `HAVING` faz em SQL?", opcoes: ["Filtra linhas antes do agrupamento.", "Filtra grupos de linhas com base em uma condição.", "Ordena os resultados.", "Combina tabelas."], respostaCorreta: 1 },
-    { pergunta: "Qual a diferença entre `string` e `String` em C#?", opcoes: ["Não há diferença, são sinônimos.", "Uma é um tipo de valor e a outra é um tipo de referência.", "Uma é para texto e a outra é para números.", "Uma é para o .NET Framework e a outra para o .NET Core."], respostaCorreta: 0 },
-    { pergunta: "O que a propriedade `margin` em CSS controla?", opcoes: ["O espaço interno de um elemento.", "A largura de um elemento.", "O espaço externo ao redor de um elemento.", "A cor de fundo de um elemento."], respostaCorreta: 2 },
-    { pergunta: "O que é 'Análise de Pontos de Função' (Function Point Analysis)?", opcoes: ["Uma técnica para estimar o tamanho e a complexidade de um sistema de software.", "Uma métrica para medir a velocidade de execução.", "Um tipo de teste de software.", "Uma ferramenta de automação de testes."], respostaCorreta: 0 },
-    { pergunta: "Em C#, o que é uma `enum`?", opcoes: ["Um tipo de dado numérico.", "Um tipo de dado para strings.", "Uma classe para enumerar valores.", "Um tipo especial para representar um conjunto de constantes nomeadas."], respostaCorreta: 3 },
-    //... (e assim por diante até completar 200)
-
 ];
 
 const valores = [
@@ -760,6 +716,7 @@ let pularDisponivel = 3;
 let ajudaCartasDisponivel = true;
 let ajudaPlateiaDisponivel = true;
 let ajudaPlacaDisponivel = true;
+let respostaCorretaOriginal = null; // Variável para armazenar a resposta correta
 
 const telaInicial = document.getElementById('tela-inicial');
 const telaJogo = document.getElementById('tela-jogo');
@@ -831,22 +788,33 @@ function carregarPergunta() {
     const questao = perguntas[perguntaAtualIndex];
     perguntaTexto.textContent = questao.pergunta;
 
+    // ----- Lógica para embaralhar as alternativas -----
+    const opcoesEmbaralhadas = [...questao.opcoes];
+    embaralharArray(opcoesEmbaralhadas);
+    
+    // Armazena a resposta correta original para uso posterior
+    const respostaCorretaTexto = questao.opcoes[questao.respostaCorreta];
+
     botoesOpcao.forEach((botao, index) => {
-        botao.textContent = `${index + 1}. ${questao.opcoes[index]}`;
-        botao.dataset.index = index;
+        botao.textContent = `${index + 1}. ${opcoesEmbaralhadas[index]}`;
+        // Atribui o novo índice embaralhado ao dataset
+        botao.dataset.opcoes = opcoesEmbaralhadas[index];
+        
         botao.classList.remove('correta', 'incorreta', 'escondido');
         botao.disabled = false;
     });
+
+    // Atualiza a variável global com o texto da resposta correta
+    respostaCorretaOriginal = respostaCorretaTexto;
 
     atualizarPlacar();
     atualizarValoresBotoes();
 }
 
 function verificarResposta(e) {
-    const respostaClicada = parseInt(e.target.dataset.index);
-    const questao = perguntas[perguntaAtualIndex];
-
-    if (respostaClicada === questao.respostaCorreta) {
+    const respostaClicadaTexto = e.target.dataset.opcoes;
+    
+    if (respostaClicadaTexto === respostaCorretaOriginal) {
         e.target.classList.add('correta');
         pontuacaoAtual = valores[perguntaAtualIndex];
         setTimeout(() => {
@@ -855,7 +823,14 @@ function verificarResposta(e) {
         }, 1500);
     } else {
         e.target.classList.add('incorreta');
-        botoesOpcao[questao.respostaCorreta].classList.add('correta');
+        
+        // Encontra o botão com a resposta correta original para destacá-lo
+        botoesOpcao.forEach(botao => {
+            if (botao.dataset.opcoes === respostaCorretaOriginal) {
+                botao.classList.add('correta');
+            }
+        });
+        
         setTimeout(() => {
             gameOver();
         }, 2000);
@@ -917,15 +892,15 @@ function pularPergunta(e) {
 function ajudaCartas() {
     if (ajudaCartasDisponivel) {
         ajudaCartasDisponivel = false;
-        const questao = perguntas[perguntaAtualIndex];
+        
         const opcoesIncorretas = [];
-
         botoesOpcao.forEach((botao, index) => {
-            if (index !== questao.respostaCorreta) {
+            if (botao.dataset.opcoes !== respostaCorretaOriginal) {
                 opcoesIncorretas.push(botao);
             }
         });
 
+        // Esconde duas opções incorretas aleatoriamente
         const indexParaRemover1 = Math.floor(Math.random() * opcoesIncorretas.length);
         opcoesIncorretas[indexParaRemover1].classList.add('escondido');
         opcoesIncorretas.splice(indexParaRemover1, 1);
@@ -944,8 +919,8 @@ function ajudaCartas() {
 function ajudaPlateia() {
     if (ajudaPlateiaDisponivel) {
         ajudaPlateiaDisponivel = false;
-        const questao = perguntas[perguntaAtualIndex];
-        const respostaCorretaOpcao = botoesOpcao[questao.respostaCorreta].textContent;
+        
+        const respostaCorretaOpcao = respostaCorretaOriginal;
         alert(`A plateia votou na opção correta: ${respostaCorretaOpcao}`);
         
         ajudaPlateiaBtn.style.cursor = 'not-allowed';
@@ -959,8 +934,8 @@ function ajudaPlateia() {
 function ajudaPlaca() {
     if (ajudaPlacaDisponivel) {
         ajudaPlacaDisponivel = false;
-        const questao = perguntas[perguntaAtualIndex];
-        const respostaCorretaOpcao = botoesOpcao[questao.respostaCorreta].textContent;
+        
+        const respostaCorretaOpcao = respostaCorretaOriginal;
         alert(`O apresentador está consultando a placa... A resposta é: ${respostaCorretaOpcao}`);
         
         ajudaPlacaBtn.style.cursor = 'not-allowed';
