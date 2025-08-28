@@ -136,7 +136,6 @@ body, html { /* Estilos globais para a página */
 #tela-jogo {
  flex-direction: row;
  justify-content: space-between;
- /* align-items: flex-start; Alinha o conteúdo ao topo para melhor visualização */
  padding: 20px;
 }
 
@@ -387,6 +386,7 @@ position: static;
 transform: none;
 margin-top: 20px;
 width: 95%;
+flex-direction: column;
 }
 }
 
