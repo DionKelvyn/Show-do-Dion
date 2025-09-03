@@ -704,6 +704,309 @@ const perguntas = [
         ],
         respostaCorreta: 1
     },
+    //Arquitetura de Computadores e Sistemas Operacionais
+    {
+    pergunta: "Qual a função do 'cache' na arquitetura de um computador?",
+    opcoes: [
+        "Armazenar dados permanentemente para acesso futuro.",
+        "Aumentar o espaço de armazenamento do disco rígido.",
+        "Servir como uma memória pequena e rápida para armazenar dados frequentemente acessados pela CPU.",
+        "Conectar periféricos externos à placa-mãe."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Em sistemas operacionais, o que é um 'thread'?",
+    opcoes: [
+        "Um programa completo em execução.",
+        "Uma unidade de armazenamento de dados.",
+        "Um único fluxo de execução dentro de um processo.",
+        "Um tipo de arquivo do sistema."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Qual das seguintes opções é uma característica do sistema operacional Linux?",
+    opcoes: [
+        "É um sistema de código fechado.",
+        "Não suporta servidores de rede.",
+        "É conhecido por sua flexibilidade e por ser amplamente utilizado em servidores e sistemas embarcados.",
+        "Possui uma única versão, sem variações."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "O que o 'shell' de um sistema operacional faz?",
+    opcoes: [
+        "Gerencia a alocação de memória.",
+        "É a interface do usuário que interpreta comandos e executa programas.",
+        "Controla o hardware de áudio.",
+        "Armazena arquivos do sistema."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Em um computador, qual componente é responsável por exibir a imagem no monitor?",
+    opcoes: [
+        "Unidade Central de Processamento (CPU).",
+        "Memória de Acesso Aleatório (RAM).",
+        "Placa-mãe.",
+        "Unidade de Processamento Gráfico (GPU)."
+    ],
+    respostaCorreta: 3
+},
+{
+    pergunta: "O que é 'Multitarefa' em um sistema operacional?",
+    opcoes: [
+        "A capacidade de um sistema executar apenas um programa por vez.",
+        "A capacidade de o sistema executar vários programas simultaneamente.",
+        "A habilidade de um programa usar a internet.",
+        "O processo de instalar um software."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Qual o propósito de um sistema de arquivos em um sistema operacional?",
+    opcoes: [
+        "Gerenciar a conexão com a internet.",
+        "Organizar e gerenciar arquivos e diretórios em um dispositivo de armazenamento.",
+        "Executar jogos de alta performance.",
+        "Controlar a temperatura do processador."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "O que é um 'buffer de entrada/saída'?",
+    opcoes: [
+        "Uma área de memória usada para armazenar temporariamente dados durante operações de I/O.",
+        "Um dispositivo de armazenamento externo.",
+        "Um tipo de programa de compressão de arquivos.",
+        "Uma ferramenta para otimizar o disco rígido."
+    ],
+    respostaCorreta: 0
+},
+{
+    pergunta: "Em Linux, qual comando é utilizado para mudar de diretório?",
+    opcoes: [
+        "`ls`",
+        "`cd`",
+        "`pwd`",
+        "`touch`"
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "O que é 'Swapping' em sistemas operacionais?",
+    opcoes: [
+        "O processo de trocar a CPU por outra.",
+        "A troca de dados entre a memória RAM e o disco rígido para gerenciar a memória virtual.",
+        "O processo de copiar arquivos para um servidor de rede.",
+        "A instalação de um novo sistema operacional."
+    ],
+    respostaCorreta: 1
+},
+//Fundamentos de Engenharia de Software e Análise de Sistemas
+{
+    pergunta: "No contexto da Engenharia de Software, o que é um 'requisito não funcional'?",
+    opcoes: [
+        "Uma funcionalidade que o sistema deve ter.",
+        "Uma restrição sobre como o sistema deve se comportar, como desempenho, segurança ou usabilidade.",
+        "Uma característica irrelevante para o sistema.",
+        "Um erro ou bug no software."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Qual é o principal objetivo do padrão de projeto 'Inversão de Controle' (IoC)?",
+    opcoes: [
+        "Tornar o código mais complexo.",
+        "Aumentar o acoplamento entre os módulos.",
+        "Inverter o controle de fluxo de uma aplicação, deixando que um framework ou contêiner gerencie as dependências.",
+        "Fornecer um ambiente de teste manual."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Em UML, o que um Diagrama de Caso de Uso representa?",
+    opcoes: [
+        "As classes e seus relacionamentos.",
+        "A interação entre objetos ao longo do tempo.",
+        "As funcionalidades do sistema e os atores que as utilizam.",
+        "O fluxo de atividades de um processo de negócio."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "O que é um 'artefato' em um processo de desenvolvimento de software?",
+    opcoes: [
+        "Um erro de código.",
+        "Qualquer produto tangível ou resultado do processo, como documentação, código-fonte ou modelos.",
+        "Um tipo de hardware.",
+        "Um usuário do sistema."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Em Orientação a Objetos, o que é 'Polimorfismo por Subtipo'?",
+    opcoes: [
+        "A capacidade de um objeto ter apenas um tipo.",
+        "A capacidade de um objeto de uma subclasse ser tratado como um objeto da sua superclasse.",
+        "A capacidade de esconder a implementação interna.",
+        "Um método de criação de objetos."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Qual a diferença entre 'coleta de requisitos' e 'análise de requisitos'?",
+    opcoes: [
+        "Não há diferença, são a mesma coisa.",
+        "A coleta é a documentação, e a análise é o entendimento.",
+        "A coleta é o processo de entender as necessidades, e a análise é o processo de refinar e organizar esses requisitos.",
+        "A coleta de requisitos é feita pelo desenvolvedor, e a análise é feita pelo cliente."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Em um banco de dados, o que é uma 'chave primária'?",
+    opcoes: [
+        "Um tipo de dado.",
+        "Um campo ou conjunto de campos que identificam unicamente cada registro em uma tabela.",
+        "Uma relação entre tabelas.",
+        "Um tipo de consulta SQL."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Qual o principal objetivo da 'Modelagem de Dados'?",
+    opcoes: [
+        "Criar a interface do usuário.",
+        "Definir os algoritmos do sistema.",
+        "Representar a estrutura de um banco de dados de forma lógica e física.",
+        "Gerenciar o ciclo de vida do software."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "O que a 'cobertura de código' mede em testes de software?",
+    opcoes: [
+        "O número de bugs no código.",
+        "A porcentagem de código-fonte que é executada pelos testes.",
+        "A velocidade de execução do código.",
+        "O tempo que leva para um teste ser concluído."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "O que é 'Análise de Sistemas'?",
+    opcoes: [
+        "O processo de programar a interface do usuário.",
+        "O processo de testar um software.",
+        "O estudo de como um sistema de software deve funcionar para atender às necessidades do usuário, incluindo a identificação dos requisitos.",
+        "O processo de documentar o hardware do sistema."
+    ],
+    respostaCorreta: 2
+},
+//Tecnologia .NET, C# e ASP.NET
+{
+    pergunta: "Em C#, qual a principal diferença entre 'Task' e 'Thread'?",
+    opcoes: [
+        "Não há diferença, são sinônimos.",
+        "Task é uma abstração para operações assíncronas, enquanto Thread é um fluxo de execução de baixo nível do sistema operacional.",
+        "Task é mais lento que Thread.",
+        "Thread é usado para programação síncrona, e Task para assíncrona."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "O que é um 'NuGet Package' no ecossistema .NET?",
+    opcoes: [
+        "Um tipo de dado primitivo.",
+        "Um formato de arquivo de log.",
+        "Um gerenciador de pacotes para o .NET, que permite a inclusão de bibliotecas de terceiros.",
+        "Um programa para compilar código C#."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Qual o objetivo de usar 'Docker' com .NET Core?",
+    opcoes: [
+        "Apenas criar containers Linux.",
+        "Reduzir o consumo de energia da aplicação.",
+        "Empacotar a aplicação e suas dependências em um container, garantindo que ela rode de forma consistente em qualquer ambiente.",
+        "Executar testes unitários."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Em ASP.NET Core, o que são 'Rotas' (Routing)?",
+    opcoes: [
+        "A forma como a aplicação se conecta ao banco de dados.",
+        "A forma como a aplicação mapeia requisições HTTP de entrada para endpoints específicos, como métodos de Controller.",
+        "O processo de tratamento de erros.",
+        "As classes que gerenciam a View."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Qual a função do 'Identity' em ASP.NET Core?",
+    opcoes: [
+        "Gerenciar a navegação do usuário.",
+        "Fornecer um framework para gerenciamento de autenticação e autorização de usuários.",
+        "Criar a interface do usuário.",
+        "Executar migrações de banco de dados."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "O que é um 'ViewModel' em ASP.NET MVC?",
+    opcoes: [
+        "Um tipo de banco de dados.",
+        "Um modelo de dados que representa apenas os dados necessários para uma View específica.",
+        "Uma classe que gerencia a lógica de negócio.",
+        "Uma classe que se conecta a serviços externos."
+    ],
+    respostaCorreta: 1
+},
+{
+    pergunta: "Em SQL, qual a diferença entre `DELETE` e `TRUNCATE`?",
+    opcoes: [
+        "`DELETE` remove a tabela inteira, `TRUNCATE` remove apenas os dados.",
+        "`DELETE` é uma operação DDL, `TRUNCATE` é DML.",
+        "`DELETE` pode ser revertido e usa um `WHERE`, `TRUNCATE` é mais rápido e não pode ser revertido.",
+        "Não há diferença, os dois comandos fazem a mesma coisa."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "O que é 'Docker' no contexto de DevOps?",
+    opcoes: [
+        "Uma ferramenta para escrever código.",
+        "Um software para gerenciar bancos de dados.",
+        "Uma plataforma que permite o empacotamento, distribuição e execução de aplicações em containers leves e portáteis.",
+        "Uma ferramenta de teste de software."
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "Em uma REST API, qual método HTTP é usado para atualizar um recurso existente?",
+    opcoes: [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+    ],
+    respostaCorreta: 2
+},
+{
+    pergunta: "O que o 'SonarQube' faz?",
+    opcoes: [
+        "Gera relatórios financeiros.",
+        "Uma plataforma para análise estática de código que detecta bugs, vulnerabilidades e dívida técnica.",
+        "Gerencia o ciclo de vida da aplicação.",
+        "Executa testes de aceitação."
+    ],
+    respostaCorreta: 1
+}
 ];
 
 const valores = [
