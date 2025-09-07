@@ -398,10 +398,10 @@ margin-top: 50px;
 }
 
 .botoes-acao-final {
-display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px; /* Exemplo de espaçamento */
+position: static;
+transform: none;
+margin-top: 20px;
+width: 95%;
 }
 
 .botao-voltar {
