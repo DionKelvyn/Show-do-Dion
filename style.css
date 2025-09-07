@@ -19,24 +19,24 @@ body, html { /* Estilos globais para a página */
  color: var(--cor-texto);
  background-color: var(--cor-fundo);
  min-height: 100vh;
- width: 100vw; /* Garante que o body ocupe toda a largura */
  display: flex; /* Usa Flexbox para centralizar o contêiner do jogo */
  justify-content: center;
  align-items: center;
  min-height: 100vh;
- overflow: hidden; /* Evita barras de rolagem */
 }
 
 .container { /* Contêiner principal com fundo e alinhamento */
  width: 100%;
  max-width: 1920px;
- height: 100vh;
+  min-height: 100vh;
  background-size: cover;
  background-position: center;
  display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
- position: relative; /* Para posicionar elementos com 'absolute' */
+ position: relative;
+ padding: 20px;
 }
 
 /* Focos de luz no topo (simulados por gradientes ou imagens) */
@@ -179,6 +179,23 @@ background-color: #282c34;
  position: relative;
 }
 
+.botao-voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--cor-texto);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.botao-voltar:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .logo-jogo {
 position: absolute;
 top: 20px;
@@ -187,14 +204,14 @@ left: 50%;
  width: 150px;
 }
 
-.temporizador {
+/* .temporizador {
  position: absolute;
  top: 20px;
 right: 20px;
  font-size: 2rem;
  font-weight: bold;
 color: var(--cor-amarelo);
-}
+} */
 
 .caixa-pergunta {
 background-color: rgba(0, 0, 0, 0.6);
@@ -316,10 +333,7 @@ justify-content: center; /* Centraliza os botões de ajuda */
     display: flex;
     justify-content: center;
  gap: 10px;
- position: absolute;
- bottom: 200px;
- left: 50%;
- transform: translateX(130%);
+ 
 }
 
 .acao-btn {
@@ -356,9 +370,10 @@ padding: 10px; /* Reduz o padding geral */
 width: 95%; /* Usa uma largura menor para não encostar nas bordas */
 margin-bottom: 20px;
 }
-    
+
 .logo-inicial, .logo-jogo {
-max-width: 80%; /* Reduz a largura do logo para caber na tela */
+max-width: 17%; /* Reduz a largura do logo para caber na tela */
+padding: 20px;
 }
 
 .card-play {
@@ -376,17 +391,24 @@ grid-template-columns: 1fr; /* Muda para uma única coluna para as opções */
 width: 95%;
 margin-top: 10px;
 }
-    
+
 .caixa-pergunta {
 padding: 20px;
 margin-top: 50px;
 }
 
 .botoes-acao-final {
+display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* Exemplo de espaçamento */
+}
+
+.botao-voltar {
 position: static;
-transform: none;
-margin-top: 20px;
-width: 95%;
+margin-bottom: 20px;
+width: 90%;
+text-align: center;
 }
 }
 
@@ -395,7 +417,12 @@ width: 95%;
 .logo-inicial {
 max-width: 70%;
 }
-    
+
+.logo-inicial, .logo-jogo {
+max-width: 80%; /* Reduz a largura do logo para caber na tela */
+padding: 5px;
+}
+ 
 .card-play {
 font-size: 1.2rem;
 padding: 10px 20px;
@@ -404,5 +431,10 @@ padding: 10px 20px;
 .ajuda-btn {
 width: 60px;
 height: 60px;
+}
+.botao-voltar {
+margin-top: 120px; /* Margem ligeiramente menor */
+font-size: 1rem;
+padding: 10px 15px;
 }
 }
