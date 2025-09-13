@@ -78,7 +78,7 @@ body, html { /* Estilos globais para a página */
 /* Estilos da Tela Inicial */
 #tela-inicial {
  justify-content: center; /* Centraliza verticalmente */
- gap: 80px; /* Espaçamento entre o logo e o botão */
+ gap: 10px; /* Espaçamento entre o logo e o botão */
 }
 
 .logo-inicial {
