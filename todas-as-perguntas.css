@@ -84,41 +84,6 @@ transform: skewX(20deg); /* Inclinação para simular ângulo de luz */
     height: auto;
 }
 
-.card-play {
-    background-image: url('imagens/borda_botao.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border: none;
-    padding: 25px 60px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.4);
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    border-radius: 15px;
-}
-
-.card-play:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 50, 50, 1), 0 0 60px rgba(255, 50, 50, 0.7);
-}
-
-.card-play img {
-    width: 60px;
-    height: auto;
-}
-
-.card-play p {
-    margin: 0;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
 .outro-modo {
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.7), 0 0 40px rgba(255, 255, 0, 0.4);
 }
