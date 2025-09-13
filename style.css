@@ -81,18 +81,6 @@ body, html { /* Estilos globais para a página */
  gap: 80px; /* Espaçamento entre o logo e o botão */
 }
 
-.logo-container {
-    background-image: url('imagens/borda.png'); 
-    background-size: 100% 100%; /* Ajusta a imagem para preencher o container */
-    background-repeat: no-repeat;
-    padding: 50px 50px; /* Preenchimento para a borda */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 40px rgba(0, 191, 255, 0.5); /* Brilho azul */
-    border-radius: 15px; /* Bordas arredondadas para o container */
-}
-
 .logo-inicial {
  max-width: 400px;
  height: auto;
@@ -102,17 +90,21 @@ body, html { /* Estilos globais para a página */
  background-image: url('imagens/borda_botao.png');
  background-size: 100% 100%;
  background-repeat: no-repeat;
+ background-color: rgb(0, 0, 0); 
  border: none;
- padding: 25px 60px; /* Preenchimento para a borda */
  text-align: center;
  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.4); /* Brilho vermelho */
  cursor: pointer;
  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
- display: flex;
+ display: flex; /* alinhar conteúdo */
  flex-direction: row; /* Alinha ícone e texto lado a lado */
  align-items: center;
+ justify-content: center; /* Alinha o conteúdo ao centro do botão */
  gap: 20px; /* Espaçamento entre a imagem e o texto */
  border-radius: 15px; /* Bordas arredondadas para o botão */
+ text-decoration: none; /* Remove a linha de baixo padrão dos links */
+ width: 280px;  
+ height: 80px;
 }
 
 .card-play:hover {
@@ -120,17 +112,12 @@ body, html { /* Estilos globais para a página */
  box-shadow: 0 0 30px rgba(255, 50, 50, 1), 0 0 60px rgba(255, 50, 50, 0.7); /* Brilho mais intenso no hover */
 }
 
-.card-play img {
- width: 60px; /* Tamanho da nota de 1 real */
- height: auto;
-}
-
 .card-play p {
     margin: 0; /* Remove margem padrão do parágrafo */
-    font-size: 2.2rem; /* Tamanho da fonte maior para "JOGAR" */
+    font-size: 1.6rem; /* Tamanho da fonte maior para "JOGAR" */
     font-weight: bold;
-    color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+    color: rgb(255, 254, 249); 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Sombra no texto */
 }
 
 #tela-jogo {
