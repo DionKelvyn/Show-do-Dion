@@ -1,26 +1,24 @@
 const perguntas = [
     {
-        pergunta: "Os teóricos Halliday e Hasan (1976) propõem cinco mecanismos de coesão: referência, substituição, elipse, conjunção e coesão lexical (Cavalcante, 2014). Com base nessa fundamentação teórica sobre coesão textual, analise as assertivas a seguir: I. Referência e elipse são mecanismos que dependem da presença explícita dos elementos linguísticos no texto. II. Em conjunção, estabelece-se relação semântica entre orações, como causa, oposição ou adição. III. A coesão lexical abrange recursos como repetição, sinonímia, hiperonímia e colocação lexical. Quais estão corretas?",
+        pergunta: "Leia o fragmento: “A propaganda afirma que o produto trará felicidade imediata a quem o consumir. No entanto, não há qualquer comprovação científica sobre seus efeitos.” Assinale a alternativa correta:",
      
         opcoes: [
-            "Apenas II.",
-            "Apenas III.",
-            "Apenas I e III.",
-            "Apenas II e III.",
-            "I, II e III."
+            "A primeira frase expressa um fato e a segunda, uma opinião.",
+            "A primeira frase expressa uma opinião e a segunda, um fato.",
+            "Ambas as frases expressam opiniões.",
+            "Ambas as frases expressam fatos."
         ],
-        respostaCorreta: 3
+        respostaCorreta: 1
     },
     {
-        pergunta: "Analise a frase a seguir: “O avanço tecnológico, aliado à capacidade humana de inovar, tem transformado de maneira acelerada a forma como nos comunicamos”. Com base nos aspectos de morfossintaxe, considerando classes de palavras e funções sintáticas, assinale a alternativa correta. ",
+        pergunta: "Leia o texto: “O jornal noticiou que a taxa de desemprego caiu no último trimestre. Já o colunista opinou que esse número não reflete a realidade, pois muitos trabalhadores vivem de subempregos.” Nesse fragmento, identificam-se:",
         opcoes: [
-            "“Aliado à capacidade humana de inovar” constitui oração reduzida de particípio com valor adjetivo, funcionando como adjunto adverbial de causa do verbo “tem transformado”.",
-            "Em “de maneira acelerada”, o núcleo é o substantivo “maneira”, modificado pelo adjetivo “acelerada”; o conjunto funciona como adjunto adverbial de intensidade.",
-            "“Tem transformado” forma uma locução verbal em que “ter” atua como verbo auxiliar, indicando ação habitual com relevância no momento da enunciação. ",
-            "O vocábulo “como” introduz oração subordinada adverbial conformativa, que exerce função de adjunto adverbial do núcleo nominal “forma”. ",
-            "O sujeito da oração principal é composto, formado por “avanço tecnológico” e “capacidade humana de inovar”, coordenados pela expressão “aliado a”."
+            "Um implícito e uma ideia secundária.",
+            "Um fato e uma opinião.",
+            "Dois subentendidos.",
+            "Dois fatos independentes."
         ],
-        respostaCorreta: 2
+        respostaCorreta: 1
     }
 ];
 
