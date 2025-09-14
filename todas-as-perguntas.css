@@ -20,11 +20,12 @@ color: var(--cor-texto);
 background-color: var(--cor-fundo);
 min-height: 100vh;
 width: 100vw; /* Garante que o body ocupe toda a largura */
+overflow-y: auto; /* Adiciona scroll vertical apenas se o conteúdo for maior */
+overflow-x: hidden; /* Mantém o scroll horizontal escondido */
 display: flex; /* Usa Flexbox para centralizar o contêiner do jogo */
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-overflow: hidden; /* Evita barras de rolagem */
 }
 
 .container { /* Contêiner principal com fundo e alinhamento */
@@ -64,7 +65,7 @@ transform: skewX(20deg); /* Inclinação para simular ângulo de luz */
 /* Estilos da Tela Inicial */
 #tela-inicial {
     justify-content: center;
-    gap: 80px;
+    gap: 10px;
 }
 
 .logo-container {
@@ -217,6 +218,7 @@ transform: skewX(20deg); /* Inclinação para simular ângulo de luz */
 
     .caixa-pergunta {
         padding: 20px;
+        margin-top: 50px;
     }
 
     .botao-voltar {
@@ -225,4 +227,21 @@ transform: skewX(20deg); /* Inclinação para simular ângulo de luz */
         width: 90%;
         text-align: center;
     }
+}
+@media (max-width: 480px) {
+/* Ajustes para telas ainda menores (celulares pequenos) */
+.logo-inicial {
+max-width: 70%;
+}
+
+.logo-inicial, .logo-jogo {
+max-width: 80%; /* Reduz a largura do logo para caber na tela */
+padding: 5px;
+}
+
+.botao-voltar {
+margin-top: 120px; /* Margem ligeiramente menor */
+font-size: 1rem;
+padding: 10px 15px;
+}
 }

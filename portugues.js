@@ -1,26 +1,104 @@
 const perguntas = [
+    //Interpretação de texto, fato/opinião, implícitos, intencionalidade discursiva, ideias principais/ secundárias e recursos de argumentação
     {
-        pergunta: "Os teóricos Halliday e Hasan (1976) propõem cinco mecanismos de coesão: referência, substituição, elipse, conjunção e coesão lexical (Cavalcante, 2014). Com base nessa fundamentação teórica sobre coesão textual, analise as assertivas a seguir: I. Referência e elipse são mecanismos que dependem da presença explícita dos elementos linguísticos no texto. II. Em conjunção, estabelece-se relação semântica entre orações, como causa, oposição ou adição. III. A coesão lexical abrange recursos como repetição, sinonímia, hiperonímia e colocação lexical. Quais estão corretas?",
-     
+        pergunta: "Leia o fragmento: “A propaganda afirma que o produto trará felicidade imediata a quem o consumir. No entanto, não há qualquer comprovação científica sobre seus efeitos.” Assinale a alternativa correta:",
         opcoes: [
-            "Apenas II.",
-            "Apenas III.",
-            "Apenas I e III.",
-            "Apenas II e III.",
-            "I, II e III."
+            "A primeira frase expressa um fato e a segunda, uma opinião.",
+            "A primeira frase expressa uma opinião e a segunda, um fato.",
+            "Ambas as frases expressam opiniões.",
+            "Ambas as frases expressam fatos."
+        ],
+        respostaCorreta: 1
+    },
+    {
+        pergunta: "Leia o texto: “O jornal noticiou que a taxa de desemprego caiu no último trimestre. Já o colunista opinou que esse número não reflete a realidade, pois muitos trabalhadores vivem de subempregos.” Nesse fragmento, identificam-se:",
+        opcoes: [
+            "Um implícito e uma ideia secundária.",
+            "Um fato e uma opinião.",
+            "Dois subentendidos.",
+            "Dois fatos independentes."
+        ],
+        respostaCorreta: 1
+    },
+    {
+        pergunta: "Considere o trecho: “O autor critica o sistema educacional, mas não apresenta propostas para superá-lo.” A função da expressão destacada “mas não apresenta propostas” é:",
+        opcoes: [
+            "Construir uma oposição, reforçando a ideia de incompletude do discurso.",
+            "Apresentar um argumento de autoridade.",
+            "Marcar a conclusão do texto.",
+            "Estabelecer causa e consequência."
+        ],
+        respostaCorreta: 0
+    },
+    {
+        pergunta: "Leia o fragmento: “É comum ouvirmos que vivemos na era da informação. Porém, mais do que informação, o que nos rodeia são discursos com diferentes intenções.” Esse trecho pode ser interpretado, à luz de Eni Orlandi, como:",
+        opcoes: [
+            "Um exemplo de fato objetivo.",
+            "Um exemplo de intencionalidade discursiva.",
+            "Um caso de neutralidade textual.",
+            "Um exemplo de polissemia lexical."
+        ],
+        respostaCorreta: 1    
+    },
+    {
+        pergunta: "Analise o trecho: “Segundo especialistas, o clima da Terra passa por mudanças cíclicas naturais. Contudo, muitos cientistas alertam que as ações humanas intensificam tais transformações.” Nesse trecho, a ideia principal é:",
+        opcoes: [
+            "As ações humanas provocam mudanças naturais.",
+            "O clima da Terra sofre mudanças cíclicas.",
+            "O alerta de cientistas sobre a intensificação das mudanças climáticas.",
+            "A divergência de posicionamentos sobre as causas das mudanças climáticas."
         ],
         respostaCorreta: 3
     },
     {
-        pergunta: "Analise a frase a seguir: “O avanço tecnológico, aliado à capacidade humana de inovar, tem transformado de maneira acelerada a forma como nos comunicamos”. Com base nos aspectos de morfossintaxe, considerando classes de palavras e funções sintáticas, assinale a alternativa correta. ",
+        pergunta: "Sobre a interpretação de textos, segundo José Luiz Fiorin e Francisco Platão Savioli, é correto afirmar que:",
         opcoes: [
-            "“Aliado à capacidade humana de inovar” constitui oração reduzida de particípio com valor adjetivo, funcionando como adjunto adverbial de causa do verbo “tem transformado”.",
-            "Em “de maneira acelerada”, o núcleo é o substantivo “maneira”, modificado pelo adjetivo “acelerada”; o conjunto funciona como adjunto adverbial de intensidade.",
-            "“Tem transformado” forma uma locução verbal em que “ter” atua como verbo auxiliar, indicando ação habitual com relevância no momento da enunciação. ",
-            "O vocábulo “como” introduz oração subordinada adverbial conformativa, que exerce função de adjunto adverbial do núcleo nominal “forma”. ",
-            "O sujeito da oração principal é composto, formado por “avanço tecnológico” e “capacidade humana de inovar”, coordenados pela expressão “aliado a”."
+            "A interpretação ocorre apenas pelo que está explicitamente no texto.",
+            "A interpretação depende de identificar relações entre elementos explícitos e implícitos.",
+            "O sentido do texto é único e imutável.",
+            "O leitor não participa do processo de construção de sentido."
         ],
-        respostaCorreta: 2
+        respostaCorreta: 1
+    },
+    {
+        pergunta: "Leia o fragmento: “É preciso reconhecer os avanços tecnológicos, mas não se pode ignorar as desigualdades que eles evidenciam.” O recurso de argumentação empregado é:",
+        opcoes: [
+            "Citação de autoridade.",
+            "Argumento de oposição.",
+            "Argumento por exemplificação.",
+            "Argumento de causa e consequência."
+        ],
+        respostaCorreta: 1
+    },
+    {
+        pergunta: "Um texto apresenta a seguinte afirmação: “O governo anunciou a criação de novos empregos. Entretanto, não especificou em quais setores.” O trecho em destaque constitui:",
+        opcoes: [
+            "Uma ideia secundária.",
+            "Uma opinião.",
+            "Um implícito.",
+            "Uma restrição ao fato apresentado."
+        ],
+        respostaCorreta: 3
+    },
+    {
+        pergunta: "Leia o excerto: “A manchete anuncia queda da inflação, mas os preços nos mercados continuam subindo.” Nesse trecho, podemos identificar:",
+        opcoes: [
+            "Uma contradição entre fato e opinião.",
+            "A presença de implícitos que reforçam o efeito de sentido.",
+            "Um recurso de comparação entre ideias principais.",
+            "Uma oposição entre informação oficial e percepção cotidiana."
+        ],
+        respostaCorreta: 3
+    },
+    {
+        pergunta: "De acordo com os estudos de Eni Orlandi e Ingedore Villaça Koch, o implícito em um texto pode ser identificado quando:",
+        opcoes: [
+            "O leitor observa apenas o que está gramaticalmente expresso.",
+            "O sentido depende do conhecimento prévio e do contexto.",
+            "Há repetição de ideias principais em diferentes parágrafos.",
+            "O texto apresenta enumeração objetiva de dados."
+        ],
+        respostaCorreta: 1
     }
 ];
 

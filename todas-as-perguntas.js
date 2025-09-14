@@ -707,11 +707,12 @@ const perguntas = [
 ];
 
 let perguntaAtualIndex = 0;
-let respostaCorretaOriginal = null;
+let respostaCorretaOriginal = null; // Variável para armazenar a resposta correta
 
 const perguntaTexto = document.getElementById('pergunta-texto');
 const botoesOpcao = document.querySelectorAll('.opcao');
 
+// Função para embaralhar o array (algoritmo de Fisher-Yates)
 function embaralharArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -729,9 +730,11 @@ function carregarPergunta() {
     const questao = perguntas[perguntaAtualIndex];
     perguntaTexto.textContent = `${perguntaAtualIndex + 1}/${perguntas.length}: ${questao.pergunta}`;
 
+    // ----- Lógica para embaralhar as alternativas -----
     const opcoesEmbaralhadas = [...questao.opcoes];
     embaralharArray(opcoesEmbaralhadas);
 
+     // Armazena a resposta correta original para uso posterior
     const respostaCorretaTexto = questao.opcoes[questao.respostaCorreta];
     respostaCorretaOriginal = respostaCorretaTexto;
 

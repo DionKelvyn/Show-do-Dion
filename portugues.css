@@ -20,11 +20,12 @@ color: var(--cor-texto);
 background-color: var(--cor-fundo);
 min-height: 100vh;
 width: 100vw; /* Garante que o body ocupe toda a largura */
+overflow-y: auto; /* Adiciona scroll vertical apenas se o conteúdo for maior */
+overflow-x: hidden; /* Mantém o scroll horizontal escondido */
 display: flex; /* Usa Flexbox para centralizar o contêiner do jogo */
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-overflow: hidden; /* Evita barras de rolagem */
 }
 
 .container { /* Contêiner principal com fundo e alinhamento */
