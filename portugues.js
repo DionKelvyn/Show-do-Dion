@@ -48,7 +48,7 @@ const perguntas = [
             "O alerta de cientistas sobre a intensificação das mudanças climáticas.",
             "A divergência de posicionamentos sobre as causas das mudanças climáticas."
         ],
-        respostaCorreta: 3
+        respostaCorreta: 1
     },
     {
         pergunta: "Sobre a interpretação de textos, segundo José Luiz Fiorin e Francisco Platão Savioli, é correto afirmar que:",
