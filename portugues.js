@@ -6,7 +6,8 @@ const perguntas = [
             "A primeira frase expressa um fato e a segunda, uma opinião.",
             "A primeira frase expressa uma opinião e a segunda, um fato.",
             "Ambas as frases expressam opiniões.",
-            "Ambas as frases expressam fatos."
+            "Ambas as frases expressam fatos.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
     },
@@ -16,7 +17,8 @@ const perguntas = [
             "Um implícito e uma ideia secundária.",
             "Um fato e uma opinião.",
             "Dois subentendidos.",
-            "Dois fatos independentes."
+            "Dois fatos independentes.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
     },
@@ -26,7 +28,8 @@ const perguntas = [
             "Construir uma oposição, reforçando a ideia de incompletude do discurso.",
             "Apresentar um argumento de autoridade.",
             "Marcar a conclusão do texto.",
-            "Estabelecer causa e consequência."
+            "Estabelecer causa e consequência.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 0
     },
@@ -36,7 +39,8 @@ const perguntas = [
             "Um exemplo de fato objetivo.",
             "Um exemplo de intencionalidade discursiva.",
             "Um caso de neutralidade textual.",
-            "Um exemplo de polissemia lexical."
+            "Um exemplo de polissemia lexical.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1    
     },
@@ -46,7 +50,8 @@ const perguntas = [
             "As ações humanas provocam mudanças naturais.",
             "O clima da Terra sofre mudanças cíclicas.",
             "O alerta de cientistas sobre a intensificação das mudanças climáticas.",
-            "A divergência de posicionamentos sobre as causas das mudanças climáticas."
+            "A divergência de posicionamentos sobre as causas das mudanças climáticas.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
     },
@@ -56,7 +61,8 @@ const perguntas = [
             "A interpretação ocorre apenas pelo que está explicitamente no texto.",
             "A interpretação depende de identificar relações entre elementos explícitos e implícitos.",
             "O sentido do texto é único e imutável.",
-            "O leitor não participa do processo de construção de sentido."
+            "O leitor não participa do processo de construção de sentido.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
     },
@@ -66,7 +72,8 @@ const perguntas = [
             "Citação de autoridade.",
             "Argumento de oposição.",
             "Argumento por exemplificação.",
-            "Argumento de causa e consequência."
+            "Argumento de causa e consequência.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
     },
@@ -76,7 +83,8 @@ const perguntas = [
             "Uma ideia secundária.",
             "Uma opinião.",
             "Um implícito.",
-            "Uma restrição ao fato apresentado."
+            "Uma restrição ao fato apresentado.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 3
     },
@@ -86,7 +94,8 @@ const perguntas = [
             "Uma contradição entre fato e opinião.",
             "A presença de implícitos que reforçam o efeito de sentido.",
             "Um recurso de comparação entre ideias principais.",
-            "Uma oposição entre informação oficial e percepção cotidiana."
+            "Uma oposição entre informação oficial e percepção cotidiana.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 3
     },
@@ -96,9 +105,22 @@ const perguntas = [
             "O leitor observa apenas o que está gramaticalmente expresso.",
             "O sentido depende do conhecimento prévio e do contexto.",
             "Há repetição de ideias principais em diferentes parágrafos.",
-            "O texto apresenta enumeração objetiva de dados."
+            "O texto apresenta enumeração objetiva de dados.",
+            "Nenhuma das alternativas anteriores."
         ],
         respostaCorreta: 1
+    },
+    //Linguagem e Comunicação. Situação comunicativa. Variação linguística.
+    {
+        pergunta: "Analise o seguinte trecho, adaptado de “Vidas Secas” (1938), de Graciliano Ramos: “— Vosmecê sabe que eu sou boa — disse a moça. — Nunca ninguém me viu fazer mal a um cão. Por que hei de matar homem? [...] Não, não sou má, não tenho culpa de nada!”. Com base no trecho e de acordo com os estudos sobre variação linguística e norma-padrão, assinale a alternativa INCORRETA. ",
+        opcoes: [
+            "“Vosmecê” é uma variante regional e popular para “você”, representando traços da oralidade no discurso da personagem.",
+            "A variação linguística presente no excerto está relacionada ao nível de escolaridade e à classe social da personagem, sem prejuízo de sua expressividade.",
+            "A fala da personagem representa um desvio gramatical condenável na norma-padrão, devendo ser corrigida em registros literários formais. ",
+            "O trecho demonstra o uso da língua como construção social e histórica, refletindo as condições culturais do sertão nordestino.",
+            "O narrador respeita a variedade linguística da personagem ao manter sua forma de expressão em discurso direto."
+        ],
+        respostaCorreta: 2
     }
 ];
 
